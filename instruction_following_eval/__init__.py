@@ -13,8 +13,7 @@ def ensure_nltk_resource():
         word_tokenize("This is a test sentence.")
     except LookupError:
         # If exception is raised, it means 'punkt' is not available
-        # Download 'punkt'
-        nltk.download("punkt")
+        # Download 'punkt_tab'
         nltk.download("punkt_tab")
 
 
